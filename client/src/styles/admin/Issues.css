@@ -1,0 +1,60 @@
+.issues-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0fdf4; /* soft greenish background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(34, 139, 34, 0.1);
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  .issues-heading {
+    font-size: 26px;
+    color: #2e7d32; /* deep green */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .error-text {
+    color: #d32f2f; /* error red */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .no-issues-text {
+    color: #388e3c; /* medium green */
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .issues-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(34, 139, 34, 0.1);
+  }
+  
+  .table-header {
+    background-color: #4caf50; /* primary green */
+    color: white;
+  }
+  
+  .issues-table th,
+  .issues-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+  }
+  
+  .table-row:hover {
+    background-color: #e8f5e9; /* very light green on hover */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .email {
+    font-size: 14px;
+    color: #555;
+  }
+  

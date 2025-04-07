@@ -1,0 +1,104 @@
+  
+  .form-container h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+  }
+  
+  .loan-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    list-style: none;
+  }
+  
+  .loan-card p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .loan-card button {
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .loan-card button:hover {
+    background-color: #256029;
+  }
+  
+  .repayment-schedule {
+    margin-top: 15px;
+  }
+  
+  .repayment-schedule h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .repayment-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  .repayment-schedule th,
+  .repayment-schedule td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .repayment-schedule th {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  .repayment-schedule td {
+    color: #444;
+  }
+  
+  .repayment-form {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .repayment-form input[type="number"] {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .repayment-form button {
+    background-color: #00796b;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .repayment-form button:hover {
+    background-color: #004d40;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  

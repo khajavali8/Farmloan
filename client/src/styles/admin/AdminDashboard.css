@@ -1,0 +1,97 @@
+.admin-page-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #eafaf1, #e1f5ec);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .admin-banner {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .admin-header {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .admin-subheader {
+    font-size: 16px;
+    color: #4e684e;
+    margin-bottom: 20px;
+  }
+  
+  .admin-insights {
+    background: #f1f8e9;
+    padding: 15px;
+    border-left: 5px solid #81c784;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .admin-insights ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .admin-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .admin-card {
+    display: block;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 240px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: inherit;
+  }
+  
+  .admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0, 128, 0, 0.2);
+  }
+  
+  .admin-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .admin-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-card-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #388e3c;
+    font-weight: bold;
+  }
+  
+  .admin-card-desc {
+    font-size: 14px;
+    color: #4e684e;
+  }
+  

@@ -1,0 +1,70 @@
+.farm-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
+    margin: auto;
+  }
+  
+  .farm-heading {
+    font-size: 26px;
+    color: #24a11d;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .loading-text {
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .no-data-text {
+    color: #777;
+    font-size: 18px;
+  }
+  
+  .farm-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  
+  .farm-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .farm-card.hovered {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .farm-title {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .farm-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

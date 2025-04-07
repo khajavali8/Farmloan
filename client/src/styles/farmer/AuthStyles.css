@@ -1,0 +1,134 @@
+/* Smooth gradient background */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* Card styling */
+.auth-card {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    animation: slideIn 0.5s ease;
+    transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header text */
+.auth-header {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Input field styling */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 5px rgba(79, 195, 247, 0.4);
+}
+
+/* Button styling */
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #29b6f6, #0288d1);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.auth-button:hover {
+    background: linear-gradient(to right, #0288d1, #0277bd);
+    transform: scale(1.02);
+}
+
+/* Success and error messages */
+.success-message,
+.error-message {
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.success-message {
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: 1px solid #4db6ac;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+/* Auth footer */
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.auth-footer a {
+    color: #0288d1;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+    color: #01579b;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

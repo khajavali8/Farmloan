@@ -1,0 +1,82 @@
+/* General Text Styles */
+.loading-text {
+    text-align: center;
+    color: #3e4e3f;
+  }
+  
+  .error-text {
+    text-align: center;
+    color: #d32f2f;
+  }
+  
+  /* Containers */
+  .transactions-container,
+  .transaction-details-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #f6fdf6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .transaction-details-container {
+    max-width: 600px;
+  }
+  
+  /* Headings */
+  .transactions-heading,
+  .transaction-details-heading {
+    color: #2e7d32; /* Dark Green */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 10px;
+  }
+  
+  /* Tables */
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  .transactions-table th,
+  .transactions-table td {
+    padding: 12px;
+    border-bottom: 1px solid #c8e6c9;
+  }
+  
+  .transactions-table thead tr {
+    background-color: #388e3c;
+    color: #ffffff;
+  }
+  
+  .even-row {
+    background-color: #f1f8e9;
+  }
+  
+  .odd-row {
+    background-color: #ffffff;
+  }
+  
+  /* Buttons & Links */
+  .view-details-button,
+  .back-button {
+    text-decoration: none;
+    background-color: #43a047; /* Medium Green */
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-button:hover,
+  .back-button:hover {
+    background-color: #2e7d32; /* Darker Green */
+  }
+  

@@ -1,0 +1,78 @@
+.verify-loans-container {
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f1f8f4;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+  }
+  
+  .verify-loans-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  .verify-loans-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .verify-loans-container th,
+  .verify-loans-container td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .verify-loans-container thead {
+    background-color: #388e3c;
+    color: white;
+  }
+  
+  .verify-loans-container tbody tr:hover {
+    background-color: #e8f5e9;
+  }
+  
+  .verify-loans-container button {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verify-loans-container button:first-child {
+    background-color: #43a047; /* Verify */
+    color: white;
+  }
+  
+  .verify-loans-container button:first-child:hover {
+    background-color: #2e7d32;
+  }
+  
+  .verify-loans-container button:last-child {
+    background-color: #00695c; /* Credit */
+    color: white;
+  }
+  
+  .verify-loans-container button:last-child:hover {
+    background-color: #004d40;
+  }
+  
+  .verify-loans-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+  }
+  

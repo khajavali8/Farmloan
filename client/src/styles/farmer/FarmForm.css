@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f0f2f5;
+    color: #333;
+  }
+  
+  /* ========== Container ========== */
+  .upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+    background: linear-gradient(to top right, #e8f5e9, #ffffff);
+  }
+  
+  /* ========== Card ========== */
+  .upload-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .upload-card:hover {
+    transform: scale(1.01);
+  }
+  
+  /* ========== Title ========== */
+  .upload-title {
+    font-size: 1.6rem;
+    color: #2e7d32;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .upload-title::after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background: #66bb6a;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+  
+  /* ========== Warning ========== */
+  .warning-message {
+    background: #fff0f0;
+    border: 1px solid #ef9a9a;
+    color: #c62828;
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* ========== Form ========== */
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .upload-input,
+  .upload-textarea {
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #fafafa;
+    transition: 0.2s ease;
+  }
+  
+  .upload-input:focus,
+  .upload-textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+  }
+  
+  /* Textarea */
+  .upload-textarea {
+    min-height: 90px;
+    resize: vertical;
+  }
+  
+  /* ========== File Upload ========== */
+  .file-input-container {
+    margin-top: 0.2rem;
+  }
+  
+  .file-input-label {
+    display: block;
+    text-align: center;
+    background: #c5c7c4;
+    padding: 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  
+  .file-input-label:hover {
+    background-color: #368a45;
+    border-color: #81c784;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  /* File name list */
+  .file-names {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .file-names ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+  
+  .file-names li {
+    margin-bottom: 0.3rem;
+    word-break: break-word;
+  }
+  
+  .upload-button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #256428;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(46, 125, 50, 0.2);
+  }
+  
+  .upload-button:disabled {
+    background-color: #bbb;
+    color: #666;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .upload-card {
+      padding: 1.5rem;
+    }
+  
+    .upload-title {
+      font-size: 1.4rem;
+    }
+  
+    .upload-input,
+    .upload-textarea {
+      font-size: 0.9rem;
+      padding: 0.65rem 0.85rem;
+    }
+  
+    .upload-button {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  }
+  
