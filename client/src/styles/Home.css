@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 90vh;
+    min-height: 95vh;
     padding: 0 8%;
     background: linear-gradient(135deg, #2980b9, #27ae60); 
     color: white;

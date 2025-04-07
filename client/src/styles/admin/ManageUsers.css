@@ -1,73 +1,98 @@
+/* Container */
 .users-container {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   background-color: #f4fdf6;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 100, 0, 0.1);
-  max-width: 95%;
-  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
   font-family: "Segoe UI", sans-serif;
 }
 
+/* Heading */
 .users-heading {
-  font-size: 24px;
+  font-size: 2rem;
   color: #2e7d32;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
+/* Loading/Error Text */
 .loading-text,
 .error-text {
-  font-size: 18px;
+  font-size: 1.1rem;
+  margin: 1rem 0;
 }
 
 .error-text {
   color: #d32f2f;
+  font-weight: 500;
 }
 
+/* Table */
 .users-table {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .table-header {
   background-color: #4caf50;
-  color: white;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: 1rem;
   text-align: left;
+  font-weight: 600;
+}
+
+.table-header th {
+  padding: 1rem;
 }
 
 .table-row {
   border-bottom: 1px solid #e0e0e0;
-  height: 50px;
+  transition: background-color 0.2s ease-in-out;
 }
 
+.table-row:hover {
+  background-color: #f1f8e9;
+}
+
+.table-row td {
+  padding: 1rem;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+/* Status Styling */
 .verified {
   color: #2e7d32;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .not-verified {
   color: #c62828;
-  font-weight: bold;
+  font-weight: 600;
 }
 
+/* Buttons */
 .btn {
-  padding: 8px 12px;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 0.9rem;
   font-weight: 500;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .verify-btn {
   background-color: #4caf50;
-  color: white;
-  margin-right: 10px;
+  color: #fff;
+  margin-right: 0.5rem;
 }
 
 .verify-btn:hover {
@@ -76,9 +101,25 @@
 
 .delete-btn {
   background-color: #f44336;
-  color: white;
+  color: #fff;
 }
 
 .delete-btn:hover {
   background-color: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-table,
+  .table-header,
+  .table-row,
+  .table-row td,
+  .table-header th {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }

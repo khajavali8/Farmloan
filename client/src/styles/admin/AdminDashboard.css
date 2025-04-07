@@ -1,97 +1,195 @@
+/* Admin Page Container */
 .admin-page-container {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #eafaf1, #e1f5ec);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f5f7fa, #e8f5e9);
+  font-family: 'Poppins', sans-serif;
+  color: #2e2e2e;
+}
+
+/* Admin Banner */
+.admin-banner {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  color: white;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.admin-banner h2 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.admin-banner p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Admin Container */
+.admin-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Admin Titles */
+.admin-header {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.admin-subheader {
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Admin Insights */
+.admin-insights {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin: 0 auto 2.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.5s ease-out;
+  border-left: 5px solid #81c784;
+  max-width: 500px; /* Add this to limit the width */
+  width: 100%;
+}
+
+
+.admin-insights ul {
+  list-style: none;
+  padding-left: 1.2rem;
+}
+
+.admin-insights li {
+  position: relative;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.admin-insights li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Admin Card Grid */
+.admin-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Admin Card */
+.admin-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background: #f1f8e9;
+}
+
+/* Admin Card Content */
+.admin-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.admin-card:hover .admin-icon {
+  transform: rotate(6deg) scale(1.1);
+}
+
+.admin-card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.admin-card-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .admin-banner h2 {
+    font-size: 1.5rem;
   }
-  
-  .admin-banner {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+
+  .admin-insights li {
+    font-size: 0.95rem;
   }
-  
+}
+
+@media (max-width: 480px) {
   .admin-container {
-    text-align: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 95%;
   }
-  
+
   .admin-header {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #2e7d32;
-    font-weight: bold;
+    font-size: 1.5rem;
   }
-  
-  .admin-subheader {
-    font-size: 16px;
-    color: #4e684e;
-    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
-  .admin-insights {
-    background: #f1f8e9;
-    padding: 15px;
-    border-left: 5px solid #81c784;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    text-align: left;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .admin-insights ul {
-    list-style-type: disc;
-    padding-left: 20px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .admin-card-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .admin-card {
-    display: block;
-    text-decoration: none;
-    background: #ffffff;
-    border: 1px solid #c8e6c9;
-    border-radius: 8px;
-    padding: 20px;
-    width: 240px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: inherit;
-  }
-  
-  .admin-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 4px 12px rgba(0, 128, 0, 0.2);
-  }
-  
-  .admin-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .admin-icon {
-    font-size: 45px;
-    margin-bottom: 10px;
-  }
-  
-  .admin-card-title {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #388e3c;
-    font-weight: bold;
-  }
-  
-  .admin-card-desc {
-    font-size: 14px;
-    color: #4e684e;
-  }
-  
+}
