@@ -1,0 +1,120 @@
+.view-farms-container {
+    padding: 40px 60px;
+    background-color: #f9fff9;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .farm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+  }
+  
+  .farm-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e0f2e9;
+  }
+  
+  .farm-card.hovered {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+  }
+  
+  .card-image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .farm-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .farm-card.hovered .farm-image {
+    transform: scale(1.05);
+  }
+  
+  .card-details {
+    padding: 15px 20px;
+    text-align: left;
+  }
+  
+  .farm-name {
+    font-size: 20px;
+    color: #33691e;
+    margin-bottom: 10px;
+  }
+  
+  .card-details p {
+    margin: 6px 0;
+    color: #4e604e;
+    font-size: 14.5px;
+  }
+  
+  .invest-btn {
+    margin: 15px 20px 20px;
+    padding: 10px 18px;
+    font-size: 15px;
+    background-color: #43a047;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-self: center;
+  }
+  
+  .invest-btn:hover {
+    background-color: #2e7d32;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Responsive fallback */
+  @media (max-width: 1200px) {
+    .farm-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .farm-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .farm-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .view-farms-container {
+      padding: 20px;
+    }
+  }
+  
